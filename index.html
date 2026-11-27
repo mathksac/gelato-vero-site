@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gelato Vero: sorvetes feitos com carinho e polpas de frutas naturais.">
+  <title>Gelato Vero | Sorvetes com sabor de verdade</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topo">
+    <a class="marca" href="#inicio" aria-label="Gelato Vero - início">
+      <span class="marca-simbolo">GV</span><span>gelato <strong>vero</strong></span>
+    </a>
+    <nav aria-label="Navegação principal">
+      <a href="#sabores">Sabores</a><a href="#sobre">Nossa história</a><a href="#cadastro">Cadastre-se</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-texto">
+        <span class="etiqueta">FEITO COM FRUTAS DE VERDADE</span>
+        <h1>Um carinho em forma de <em>sorvete.</em></h1>
+        <p>Sabores especiais, preparados com polpas de frutas naturais e aquele gostinho que deixa o dia mais feliz.</p>
+        <a class="botao" href="#sabores">Conheça nossos sabores</a>
+      </div>
+      <div class="hero-ilustracao" aria-label="Ilustração de sorvete de morango">
+        <div class="sorvete">🍓<br>🍦</div><span class="bolinha b1"></span><span class="bolinha b2"></span>
+      </div>
+    </section>
+
+    <section class="secao" id="sabores">
+      <div class="cabecalho-secao"><span class="etiqueta">ESCOLHA O SEU FAVORITO</span><h2>Sabores que encantam</h2><p>Alguns dos queridinhos da Gelato Vero.</p></div>
+      <div class="grade-sabores">
+        <article class="sabor sabor-rosa"><div class="sabor-emoji">🍓</div><h3>Morango</h3><p>Leve, frutado e cheio de carinho.</p></article>
+        <article class="sabor sabor-creme"><div class="sabor-emoji">🍦</div><h3>Creme</h3><p>Clássico, suave e irresistível.</p></article>
+        <article class="sabor sabor-choco"><div class="sabor-emoji">🍫</div><h3>Chocolate</h3><p>Intenso na medida certa.</p></article>
+        <article class="sabor sabor-pistache"><div class="sabor-emoji">💚</div><h3>Pistache</h3><p>Um toque especial para surpreender.</p></article>
+      </div>
+      <p class="nota">Temos outros sabores também! Consulte a disponibilidade na loja.</p>
+    </section>
+
+    <section class="sobre" id="sobre">
+      <div class="sobre-icone">🍨</div>
+      <div><span class="etiqueta">NOSSO JEITO DE FAZER</span><h2>Sabor de verdade, feito com carinho.</h2><p>Na Gelato Vero, acreditamos que os melhores momentos ficam ainda mais gostosos com um bom sorvete. Por isso, valorizamos ingredientes e polpas de frutas naturais para oferecer uma experiência deliciosa a cada colherada.</p></div>
+    </section>
+
+    <section class="secao cadastro" id="cadastro">
+      <div class="cabecalho-secao"><span class="etiqueta">VAMOS FICAR EM CONTATO?</span><h2>Faça seu cadastro</h2><p>Cadastre-se para receber novidades e conhecer nossos sabores.</p></div>
+      <form id="form-cadastro">
+        <label for="nome">Seu nome</label><input id="nome" name="nome" type="text" placeholder="Como podemos te chamar?" required maxlength="100">
+        <label for="email">Seu e-mail</label><input id="email" name="email" type="email" placeholder="voce@email.com" required maxlength="150">
+        <label for="telefone">Telefone <span>(opcional)</span></label><input id="telefone" name="telefone" type="tel" placeholder="(00) 00000-0000" maxlength="20">
+        <label class="consentimento"><input type="checkbox" id="consentimento" required> Concordo em fornecer esses dados para contato sobre novidades da Gelato Vero.</label>
+        <button class="botao" type="submit">Quero me cadastrar</button>
+        <p id="mensagem" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer><a class="marca marca-rodape" href="#inicio"><span class="marca-simbolo">GV</span><span>gelato <strong>vero</strong></span></a><p>Feito com carinho e sabor. © <span id="ano"></span> Gelato Vero.</p></footer>
+</body>
+</html>
